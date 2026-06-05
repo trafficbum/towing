@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google PPC for Brooklyn Tow Trucks | Get More Calls Today</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #01579b 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.03)"/></svg>') repeat;
+            background-size: 100px 100px;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            font-weight: 800;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 span {
+            color: #ffd54f;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .badge {
+            background: #ffd54f;
+            color: #1a237e;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #ffd54f;
+            color: #1a237e;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 213, 79, 0.4);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-btn:hover {
+            background: #ffca28;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 213, 79, 0.6);
+        }
+
+        .section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-size: 2.2em;
+            color: #1a237e;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section p {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .stats-bar {
+            background: #f8f9fa;
+            padding: 40px 20px;
+            border-top: 3px solid #ffd54f;
+            border-bottom: 3px solid #ffd54f;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 20px;
+        }
+
+        .stat .number {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: #1a237e;
+        }
+
+        .stat .label {
+            color: #666;
+            font-size: 0.95em;
+            margin-top: 10px;
+        }
+
+        .problem {
+            background: #fff5f5;
+            border-radius: 15px;
+            padding: 60px 40px;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+        .problem h2 {
+            color: #c62828;
+            margin-bottom: 30px;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .problem-item {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid #c62828;
+        }
+
+        .problem-item h3 {
+            color: #c62828;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .problem-item p {
+            color: #666;
+            text-align: left;
+            font-size: 0.95em;
+        }
+
+        .benefits {
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+            border-radius: 20px;
+            padding: 70px 50px;
+            margin: 60px auto;
+            max-width: 1000px;
+        }
+
+        .benefits h2 {
+            color: #2e7d32;
+            margin-bottom: 40px;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .benefit h3 {
+            color: #1a237e;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+
+        .benefit p {
+            color: #555;
+            text-align: left;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+
+        .how-it-works {
+            background: #f8f9fa;
+            padding: 70px 20px;
+            margin: 60px 0;
+        }
+
+        .how-it-works h2 {
+            color: #1a237e;
+            margin-bottom: 40px;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .step {
+            text-align: center;
+            padding: 30px;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-weight: 800;
+            font-size: 1.5em;
+        }
+
+        .step h3 {
+            color: #1a237e;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .step p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .pricing {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+            color: white;
+            padding: 80px 20px;
+            margin: 60px 0;
+        }
+
+        .pricing h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .pricing p {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 40px auto 0;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            color: #333;
+        }
+
+        .pricing-card.featured {
+            border: 3px solid #ffd54f;
+            transform: scale(1.05);
+        }
+
+        .pricing-card h3 {
+            color: #1a237e;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: #1a237e;
+            margin: 15px 0;
+        }
+
+        .pricing-card .price span {
+            font-size: 0.4em;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .pricing-card ul {
+            text-align: left;
+            margin: 25px 0;
+            list-style: none;
+        }
+
+        .pricing-card ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #555;
+        }
+
+        .pricing-card ul li::before {
+            content: '✓ ';
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .roi-section {
+            background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%);
+            border-radius: 20px;
+            padding: 70px 50px;
+            margin: 60px auto;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        .roi-section h2 {
+            color: #e65100;
+            margin-bottom: 20px;
+        }
+
+        .roi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .roi-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .roi-item .number {
+            font-size: 2em;
+            font-weight: 800;
+            color: #e65100;
+            margin-bottom: 10px;
+        }
+
+        .roi-item p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .testimonials {
+            background: #f8f9fa;
+            padding: 70px 20px;
+            margin: 60px 0;
+        }
+
+        .testimonials h2 {
+            color: #1a237e;
+            margin-bottom: 40px;
+        }
+
+        .testimonial {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .testimonial .author {
+            color: #1a237e;
+            font-weight: 700;
+        }
+
+        .testimonial .stars {
+            color: #ffd54f;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .faq {
+            background: white;
+            padding: 70px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq h2 {
+            color: #1a237e;
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 25px 0;
+        }
+
+        .faq-item h3 {
+            color: #1a237e;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .faq-item p {
+            color: #666;
+            text-align: left;
+            font-size: 0.95em;
+        }
+
+        .final-cta {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #01579b 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+
+        .final-cta h2 span {
+            color: #ffd54f;
+        }
+
+        .final-cta p {
+            color: rgba(255,255,255,0.9);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .final-cta .subtext {
+            margin-top: 20px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9em;
+        }
+
+        .footer {
+            background: #0d0d0d;
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .section {
+                padding: 50px 20px;
+            }
+
+            .problem, .benefits, .roi-section {
+                padding: 40px 25px;
+                margin: 40px 15px;
+            }
+
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">Exclusive to Brooklyn Tow Companies</div>
+        <h1>Stop Waiting for the Phone to Ring.<br><span>Start Dominating Brooklyn.</span></h1>
+        <p>We build and manage Google Ads campaigns that put your tow truck business in front of customers who need a tow <em>right now</em> — and are ready to call.</p>
+        <a href="tel:4846503547" class="cta-btn">Call Sean Today (484) 650-3547</a>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat">
+                <div class="number">8.5B</div>
+                <div class="label">Daily Google Searches</div>
+            </div>
+            <div class="stat">
+                <div class="number">76%</div>
+                <div class="label">Search Local Intent</div>
+            </div>
+            <div class="stat">
+                <div class="number">50%</div>
+                <div class="label">Calls Within an Hour</div>
+            </div>
+            <div class="stat">
+                <div class="number">#1-3</div>
+                <div class="label">Ad Position on Google</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <h2>Is Your Tow Truck Company Invisible Online?</h2>
+        <p style="text-align: center; color: #666;">If potential customers can't find you when they search "tow truck near me," you're losing jobs to competitors every single day.</p>
+        
+        <div class="problem-grid">
+            <div class="problem-item">
+                <h3>❌ Feast or Famine Cycles</h3>
+                <p>Some weeks you're swamped, others the phone is silent. You can't plan, hire, or grow without consistent leads.</p>
+            </div>
+            <div class="problem-item">
+                <h3>❌ Invisible on Google</h3>
+                <p>Your competitors show up first when someone needs a tow. You're buried on page two — or nowhere at all.</p>
+            </div>
+            <div class="problem-item">
+                <h3>❌ Wasted Ad Spend</h3>
+                <p>You've tried DIY Google Ads but burned through budget with zero calls. The platform is complex and unforgiving.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <h2>Why Google Ads Works for Tow Trucks</h2>
+        <p style="text-align: center; color: #555;">When someone's car breaks down, they don't scroll social media — they Google "tow truck near me." Here's how we put you in front of them.</p>
+        
+        <div class="benefit-grid">
+            <div class="benefit">
+                <div class="benefit-icon">📞</div>
+                <h3>24/7 Emergency Call Capture</h3>
+                <p>Tows happen around the clock. Your ads run 24/7, capturing midnight breakdowns, weekend accidents, and holiday emergencies when your competitors are asleep.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🎯</div>
+                <h3>High-Intent Local Customers</h3>
+                <p>These aren't random browsers — they're people actively searching for a tow truck <em>right now</em>. They have a problem and need it solved immediately.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">⚡</div>
+                <h3>Fast Results</h3>
+                <p>Unlike SEO which takes months, Google Ads puts you at the top of search results <em>today</em>. See calls within 24-48 hours of launch.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🏆</div>
+                <h3>Dominate Local Search</h3>
+                <p>Own the top 3 positions on Google for "tow truck Brooklyn," "emergency towing," and dozens of other high-value keywords your customers are searching.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">📍</div>
+                <h3>Hyper-Local Targeting</h3>
+                <p>We target only Brooklyn and surrounding areas — no wasted clicks from people 50 miles away. Every dollar reaches a potential customer in your service area.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">📊</div>
+                <h3>Transparent Reporting</h3>
+                <p>See exactly where your money goes: impressions, clicks, calls, and cost per lead. No black box — just clear, honest data you can act on.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 40px;">We handle everything. You answer the phone.</p>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Strategy Call</h3>
+                <p>15-minute call to understand your service area, hours, and goals. We'll map out a custom campaign strategy.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>We Build It</h3>
+                <p>Our team creates your landing page, writes compelling ad copy, and sets up targeted campaigns — all within 5 business days.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>We Launch</h3>
+                <p>Your ads go live on Google. Real people searching for tow trucks in Brooklyn start seeing your business immediately.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>We Optimize</h3>
+                <p>We monitor performance daily, adjusting bids, keywords, and copy to maximize your calls and minimize wasted spend.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <h2 style="text-align: center;">Simple, Transparent Pricing</h2>
+        <p style="text-align: center;">No contracts. No hidden fees. Cancel anytime.</p>
+        
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Website Setup</h3>
+                <div class="price">$897</div>
+                <p style="color: #666; font-size: 0.9em;">One-time investment</p>
+                <ul>
+                    <li>Custom landing page optimized for conversions</li>
+                    <li>Mobile-responsive design</li>
+                    <li>Click-to-call functionality</li>
+                    <li>Google Analytics & conversion tracking</li>
+                    <li>Professional copywriting</li>
+                </ul>
+            </div>
+            
+            <div class="pricing-card featured">
+                <h3>Monthly Management</h3>
+                <div class="price">$497<span>/month</span></div>
+                <p style="color: #666; font-size: 0.9em;">Ongoing optimization</p>
+                <ul>
+                    <li>Full campaign management</li>
+                    <li>Weekly performance reports</li>
+                    <li>Keyword research & optimization</li>
+                    <li>Ad copy A/B testing</li>
+                    <li>Negative keyword management</li>
+                    <li>Bid optimization & budget pacing</li>
+                </ul>
+            </div>
+            
+            <div class="pricing-card">
+                <h3>Ad Spend Budget</h3>
+                <div class="price">$1,500</div>
+                <p style="color: #666; font-size: 0.9em;">Recommended starting budget</p>
+                <ul>
+                    <li>Direct to Google — you control the budget</li>
+                    <li>Recommended for Brooklyn market</li>
+                    <li>Adjustable anytime based on results</li>
+                    <li>Typically generates 15-25+ calls/month</li>
+                    <li>We'll advise on optimal spend levels</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Section -->
+    <section class="roi-section">
+        <h2>Let's Do the Math</h2>
+        <p style="text-align: center; color: #666;">One tow job can pay for your entire monthly ad spend.</p>
+        
+        <div class="roi-grid">
+            <div class="roi-item">
+                <div class="number">$150-300</div>
+                <p>Average tow job value in Brooklyn</p>
+            </div>
+            <div class="roi-item">
+                <div class="number">15-25+</div>
+                <p>Calls per month from Google Ads</p>
+            </div>
+            <div class="roi-item">
+                <div class="number">$30+</div>
+                <p>Average cost per lead</p>
+            </div>
+            <div class="roi-item">
+                <div class="number">5-8x</div>
+                <p>Typical return on ad spend</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>Don't Take Our Word for It</h2>
+        
+        <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>"Within the first week, we got 12 calls. By the end of the month, we had to hire another driver. Best investment we ever made."</p>
+            <div class="author">— Mike R., Brooklyn Towing Co.</div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <h3>Is there a contract?</h3>
+            <p>No long-term contracts. You're on a month-to-month basis. If you're not happy, you can cancel with 30 days notice. We earn your business every month.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>How soon will I see results?</h3>
+            <p>Most clients receive their first calls within 24-48 hours of launch. The beauty of Google Ads is immediate visibility — no waiting months for SEO results.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Do I have to manage the ads myself?</h3>
+            <p>Absolutely not. We handle everything — campaign setup, keyword research, ad writing, bid optimization, and reporting. You focus on running your business.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>What if my budget is smaller?</h3>
+            <p>We can start with a lower ad spend and scale up as you see results. The key is targeting the right keywords and locations — not just throwing money at Google.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Do you guarantee results?</h3>
+            <p>While no one can guarantee specific results (and anyone who does is lying), we can guarantee our expertise, transparency, and commitment to your success. Our track record speaks for itself.</p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <h2>Your Competitors Are Already on Google.<br><span>It's Your Turn.</span></h2>
+        <p>Every day you wait is another day a Brooklyn driver searches for a tow — and calls someone else. Let's fix that.</p>
+        <a href="tel:4846503547" class="cta-btn">Call Sean Today (484) 650-3547</a>
+        <div class="subtext">Setup in 5 days. No contracts. Cancel anytime.</div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025. Serving Tow Truck Companies Across Brooklyn, New York.
+    </div>
+</body>
+</html>
